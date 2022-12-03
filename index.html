@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title
+      >Animating CSS Grid with the Animate-CSS-Grid package: by Timonwa
+      Akintokun</title
+    >
+  </head>
+
+  <body>
+    <h1>Animating CSS Grid</h1>
+    <div class="buttons">
+      <button class="column-button">Toggle Grid Column</button>
+      <button class="row-button">Toggle Grid Row</button>
+      <button class="gap-button">Toggle Grid Gap</button>
+    </div>
+    <div class="grid">
+      <div class="grid__item"></div>
+      <div class="grid__item"></div>
+      <div class="grid__item"></div>
+      <div class="grid__item"></div>
+      <div class="grid__item"></div>
+      <div class="grid__item"></div>
+      <div class="grid__item"></div>
+      <div class="grid__item"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/animate-css-grid@latest"></script>
+    <script>
+      const grid = document.querySelector(".grid");
+      animateCSSGrid.wrapGrid(grid, {
+        stagger: 100,
+        duration: 500,
+        easing: "backInOut",
+        onStart: (animatingElementList) => {
+          console.log("starting animation");
+        },
+        onEnd: (animatingElementList) => {
+          console.log("ending animation");
+        },
+      });
+    </script>
+  </body>
+</html>
