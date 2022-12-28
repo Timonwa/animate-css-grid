@@ -6,7 +6,13 @@ This is the code example for my article on [Creating smoother CSS transitions wi
 [Animate CSS Grid](https://github.com/aholachek/animate-css-grid) allows you to conveniently transition your CSS Grid from one state to another. If your grid's content changes or one of its children is updated with adding or removing a class, the grid will automatically transition to its new configuration. 
 
 ### Breakdown:
-- 
+- What is CSS Grid?
+- Is it possible to animate a CSS Grid layout?
+- How does animate-css-grid work?
+- Animate CSS Grid demo
+    - Building the project
+    - Importing Animate CSS Grid and wrapping the container
+    - Configuring Animate CSS Grid by passing an object
 
 Please give this repo a ⭐ if it was helpful to you.
 
